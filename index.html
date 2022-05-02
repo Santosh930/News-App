@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 40px 20px 40px 20px;
+      }
+      #search_input{
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+      }
+      a{
+        font-size: 40px;
+      }
+      #sidebar{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 20px 40px 20px;
+        
+        
+      }
+      #sidebar>div{
+        font-size: 40px;
+        
+        
+      }
+      #box{
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+
+      .pox{
+        background-color: green; 
+         margin-bottom: 20px;
+      }
+      #results{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        width: 85%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+    <div id="navbar">
+      <a href="index.html">News App</a>
+      <input type="text" name="" id="search_input" placeholder="Search News">
+      
+    </div><br>
+    <div id="sidebar">
+      <div id="box">
+        <h3>Countries</h3>
+        <div id="in" class="pox">India</div>
+        <div id="ch" class="pox">China</div>
+        <div id="us" class="pox">Usa</div>
+        <div id="uk" class="pox"> Uk</div>
+        <div id="nz" class="pox">Newzeland</div>
+        </div>
+        <div id="results">
+          
+          <div class="news"></div>
+        </div>
+      
+     
+
+    </div>
+  </body>
+</html>
